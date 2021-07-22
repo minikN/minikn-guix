@@ -1,0 +1,8 @@
+;; This is the list of OpenPGP keys currently authorized to sign commits in
+;; this repository.
+
+(authorizations
+ (version 0)
+
+ (("CFDC C799 7CC2 464B 31C8 2194 F17D DB98 CC3C 405C"
+   (name "Demis Balbach"))))
