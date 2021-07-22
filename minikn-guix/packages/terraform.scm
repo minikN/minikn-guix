@@ -1,22 +1,23 @@
 ;;; Copyright © 2020 Collin J. Doering <collin@rekahsoft.ca>
+;;; Copyright © 2021 Demis Balbach <db@minikn.xyz>
 ;;;
-;;; This file is part of the GNU Guix channel rekahsoft-guix
+;;; This file is part of the GNU Guix channel minikn-guix
 ;;;
-;;; The rekahsoft-guix channel for GNU Guix is free software; you can
+;;; The minikn-guix channel for GNU Guix is free software; you can
 ;;; redistribute it and/or modify it under the terms of the GNU General Public
 ;;; License as published by the Free Software Foundation; either version 3 of
 ;;; the License, or (at your option) any later version.
 ;;;
-;;; The rekahsoft-guix channel for GNU Guix is distributed in the hope that it
+;;; The minikn-guix channel for GNU Guix is distributed in the hope that it
 ;;; will be useful, but WITHOUT ANY WARRANTY; without even the implied
 ;;; warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 ;;; GNU General Public License for more details.
 ;;;
 ;;; You should have received a copy of the GNU General Public License along
-;;; with the rekahsoft-guix channel for GNU Guix.  If not, see
+;;; with the minikn-guix channel for GNU Guix.  If not, see
 ;;; <http://www.gnu.org/licenses/>.
 
-(define-module (rekahsoft-gnu packages terraform)
+(define-module (minikn-gnu packages terraform)
   #:use-module ((guix licenses) #:prefix license:)
   #:use-module (gnu packages golang)
   #:use-module (guix packages)
@@ -24,7 +25,7 @@
   #:use-module (guix git-download)
   #:use-module (guix build-system go)
   #:use-module (guix build-system trivial)
-  #:use-module (rekahsoft-gnu packages golang))
+  #:use-module (minikn-gnu packages golang))
 
 (define-public terraform
   (package

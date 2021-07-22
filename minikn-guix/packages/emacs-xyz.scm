@@ -1,22 +1,23 @@
 ;;; Copyright © 2020 Collin J. Doering <collin@rekahsoft.ca>
+;;; Copyright © 2021 Demis Balbach <db@minikn.xyz>
 ;;;
-;;; This file is part of the GNU Guix channel rekahsoft-guix
+;;; This file is part of the GNU Guix channel minikn-guix
 ;;;
-;;; The rekahsoft-guix channel for GNU Guix is free software; you can
+;;; The minikn-guix channel for GNU Guix is free software; you can
 ;;; redistribute it and/or modify it under the terms of the GNU General Public
 ;;; License as published by the Free Software Foundation; either version 3 of
 ;;; the License, or (at your option) any later version.
 ;;;
-;;; The rekahsoft-guix channel for GNU Guix is distributed in the hope that it
+;;; The minikn-guix channel for GNU Guix is distributed in the hope that it
 ;;; will be useful, but WITHOUT ANY WARRANTY; without even the implied
 ;;; warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 ;;; GNU General Public License for more details.
 ;;;
 ;;; You should have received a copy of the GNU General Public License along
-;;; with the rekahsoft-guix channel for GNU Guix.  If not, see
+;;; with the minikn-guix channel for GNU Guix.  If not, see
 ;;; <http://www.gnu.org/licenses/>.
 
-(define-module (rekahsoft-gnu packages emacs-xyz)
+(define-module (minikn-gnu packages emacs-xyz)
   #:use-module ((guix licenses) #:prefix license:)
   #:use-module (guix packages)
   #:use-module (guix download)
@@ -169,7 +170,7 @@ If you use it with vagrant-tramp, you can also use vagrant with helm interface
 comment box is various text styles.")
     (license #f)))
 
-;; TODO: ./rekahsoft-gnu/packages/emacs-xyz.scm:172:6: emacs-ibuffer-vc@20181225.2227: URI https://melpa.org/packages/ibuffer-vc-20181225.2227.el not reachable: 404 ("Not Found")
+;; TODO: ./minikn-gnu/packages/emacs-xyz.scm:172:6: emacs-ibuffer-vc@20181225.2227: URI https://melpa.org/packages/ibuffer-vc-20181225.2227.el not reachable: 404 ("Not Found")
 (define-public emacs-ibuffer-vc
   (package
     (name "emacs-ibuffer-vc")
@@ -196,7 +197,7 @@ status of listed files.
 ")
     (license license:gpl3)))
 
-;; TODO: ./rekahsoft-gnu/packages/emacs-xyz.scm:198:6: emacs-highlight-indent-guides@20190108.3: URI https://melpa.org/packages/highlight-indent-guides-20190108.3.el not reachable: 404 ("Not Found")
+;; TODO: ./minikn-gnu/packages/emacs-xyz.scm:198:6: emacs-highlight-indent-guides@20190108.3: URI https://melpa.org/packages/highlight-indent-guides-20190108.3.el not reachable: 404 ("Not Found")
 (define-public emacs-highlight-indent-guides
   (package
     (name "emacs-highlight-indent-guides")
@@ -322,7 +323,7 @@ Functions and variables with // in their name are private and may change or
 go away at any time.")
     (license #f)))
 
-;; TODO: ./rekahsoft-gnu/packages/emacs-xyz.scm:323:6: emacs-mu4e-maildirs-extension@20180606.812: URI https://melpa.org/packages/mu4e-maildirs-extension-20180606.812.el not reachable: 404 ("Not Found")
+;; TODO: ./minikn-gnu/packages/emacs-xyz.scm:323:6: emacs-mu4e-maildirs-extension@20180606.812: URI https://melpa.org/packages/mu4e-maildirs-extension-20180606.812.el not reachable: 404 ("Not Found")
 (define-public emacs-mu4e-maildirs-extension
   (package
     (name "emacs-mu4e-maildirs-extension")
