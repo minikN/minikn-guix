@@ -1,24 +1,19 @@
 (channel-news
  (version 0)
- (entry (commit "34b5f938ad7404d980b20f0c896913c5ee597b2a")
-        (title (en "rekahsoft-guix authenticated updates"))
+ (entry (commit
+         "9e74c47733d0a054e244b94a6f2d1aff3ae4dcc1")
+        (title (en "minikn-guix initial commit"))
         (body
-         (en "This is a personal channel that is meant as a staging ground
-for changes I plan on making upstream to guix, however there may be packages
-that may never be contributed due to technical or ideological reasons.
-This channel can now take advantage of the new support for
-authenticated updates in @command{guix pull}, which protects you from attempts
-to tamper with this repository and ship malicious code instead.
-To ensure you only receive genuine updates from rekahsoft-guix, you should update your
-@file{~/.config/guix/channels.scm} to include the channel introduction:
+         (en "This is a recreation of the rekahsoft-guix channel by Collin J. Doering <collin@rekahsoft.ca>.
+To use this channel, add the following to ~/.config/guix/channels.scm:
 
 @lisp
 (channel
- (name 'rekahsoft-guix)
- (url \"https://git.rekahsoft.ca/rekahsoft/rekahsoft-guix\")
+ (name 'minikn-guix)
+ (url \"https://github.com/minikN/minikn-guix.git\")
  (introduction
   (make-channel-introduction
-   \"34b5f938ad7404d980b20f0c896913c5ee597b2a\"
+   \"fb51ac15a8a0df1cbcf60eb81700ad3aeb7b9317\"
    (openpgp-fingerprint
-    \"F8D5 46F3 AF37 EF53 D1B6  48BE 7B4D EB93 212B 3022\"))))
+     \"CFDC C799 7CC2 464B 31C8 2194 F17D DB98 CC3C 405C\"))))
 @end lisp "))))
