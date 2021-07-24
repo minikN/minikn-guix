@@ -106,7 +106,7 @@ files, command history, processes, hostnames, bookmarks, git commits, etc..")
               (file-name (git-file-name name version))
               (sha256
                (base32
-                "1q7m9mmg82n4fddfz01y95d5n34xnzhrnn1lli0vih39sgmzim9b"))))
+                "06ay1ff7a4hqmxpc6bdk5yzx9gqvmfv3dk4qqxpl3cnmbff047cg"))))
     (build-system gnu-build-system)
     (arguments
      `(#:phases
