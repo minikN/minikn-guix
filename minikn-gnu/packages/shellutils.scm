@@ -97,11 +97,11 @@ files, command history, processes, hostnames, bookmarks, git commits, etc..")
 (define-public spaceship-prompt
   (package
     (name "spaceship-prompt")
-    (version "3.11.2")
+    (version "3.13.3")
     (source (origin
               (method git-fetch)
               (uri (git-reference
-                    (url "https://github.com/denysdovhan/spaceship-prompt")
+                    (url "https://github.com/spaceship-prompt/spaceship-prompt")
                     (commit (string-append "v" version))))
               (file-name (git-file-name name version))
               (sha256
