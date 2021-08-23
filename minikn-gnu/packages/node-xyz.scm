@@ -26,7 +26,7 @@
 (define-public node-intelephense
   (package
     (name "node-intelephense")
-    (version "1.7.1")
+    (version "v1.7.1")
     (source
      (origin
        (method git-fetch)
