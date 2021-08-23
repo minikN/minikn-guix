@@ -37,7 +37,7 @@
        (sha256
         (base32 "1z26zh2345jgqyh9nba47m3va9cbzif4nl6zmfl2ksnqz6zv5yqs"))))
     (build-system node-build-system)
-    (home-page "https://github.com/acornjs/acorn/tree/master/acorn")
+    (home-page "https://github.com/bmewburn/vscode-intelephense")
     (synopsis "PHP code intelligence for Visual Studio Code")
     (description "Intelephense is a high performance PHP language server packed full of essential features for productive PHP development")
     (license (license:non-copyleft "file://LICENSE.txt"
