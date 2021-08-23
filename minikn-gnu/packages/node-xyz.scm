@@ -35,7 +35,7 @@
              (commit version)))
        (file-name (git-file-name name version))
        (sha256
-        (base32 "1z26zh2345jgqyh9nba47m3va9cbzif4nl6zmfl2ksnqz6zv5yqs"))))
+        (base32 "15k6fwfsk3m05wvmgn1vxhilk5pq2z3y2hixiaspbr00b8mw5k1q"))))
     (build-system node-build-system)
     (home-page "https://github.com/bmewburn/vscode-intelephense")
     (synopsis "PHP code intelligence for Visual Studio Code")
