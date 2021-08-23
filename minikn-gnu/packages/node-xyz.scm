@@ -40,4 +40,5 @@
     (home-page "https://github.com/acornjs/acorn/tree/master/acorn")
     (synopsis "PHP code intelligence for Visual Studio Code")
     (description "Intelephense is a high performance PHP language server packed full of essential features for productive PHP development")
-    (license license:mit)))
+    (license (license:non-copyleft "file://LICENSE.txt"
+                                   "See LICENSE.txt in the distribution."))))
