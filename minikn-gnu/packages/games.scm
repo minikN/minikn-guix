@@ -95,6 +95,60 @@
   #:use-module (ice-9 match)
   #:use-module (srfi srfi-1))
 
+(define-public libostree
+  (package
+    (name "libostree")
+    (version "2021.3")
+    (source
+     (origin
+       (method url-fetch)
+       (uri (string-append
+             "https://github.com/ostreedev/ostree/releases/download/v"
+             (version-major+minor version) "/libostree-" version ".tar.xz"))
+       (sha256
+        (base32 "1cyhr3s7xsgnsais5m4cjwdwcq46naf25r1k042c4n1y1jgs798g"))))
+    (build-system gnu-build-system)
+    (arguments
+     '(#:phases
+       (modify-phases %standard-phases
+         (add-before 'check 'pre-check
+           (lambda _
+             ;; Don't try to use the non-existing '/var/tmp' as test
+             ;; directory.
+             (setenv "TEST_TMPDIR" (getenv "TMPDIR"))
+             #t)))
+       ;; XXX: fails with:
+       ;;     tap-driver.sh: missing test plan
+       ;;     tap-driver.sh: internal error getting exit status
+       ;;     tap-driver.sh: fatal: I/O or internal error
+       #:tests? #f))
+    (native-inputs
+     `(("attr" ,attr)                   ; for tests
+       ("bison" ,bison)
+       ("glib:bin" ,glib "bin")         ; for 'glib-mkenums'
+       ("gobject-introspection" ,gobject-introspection)
+       ("pkg-config" ,pkg-config)
+       ("xsltproc" ,libxslt)))
+    (inputs
+     `(("avahi" ,avahi)
+       ("docbook-xml" ,docbook-xml-4.2)
+       ("docbook-xsl" ,docbook-xsl)
+       ("e2fsprogs" ,e2fsprogs)
+       ("fuse" ,fuse)
+       ("glib" ,glib)
+       ("gpgme" ,gpgme)
+       ("libarchive" ,libarchive)
+       ("libsoup" ,libsoup)
+       ("util-linux" ,util-linux)))
+    (home-page "https://ostree.readthedocs.io/en/latest/")
+    (synopsis "Operating system and container binary deployment and upgrades")
+    (description
+     "@code{libostree} is both a shared library and suite of command line
+tools that combines a \"git-like\" model for committing and downloading
+bootable file system trees, along with a layer for deploying them and managing
+the boot loader configuration.")
+    (license license:lgpl2.0+)))
+
 (define-public flatpak-git
   (package
    (name "flatpak-git")
