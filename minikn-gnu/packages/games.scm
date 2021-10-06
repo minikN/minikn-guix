@@ -105,7 +105,7 @@
      (uri (string-append "https://github.com/flatpak/flatpak/releases/download/"
                          version "/flatpak-" version ".tar.xz"))
      (sha256
-      (base32 "1r6xw7r3ir2vaa30n3mily6m7d51cf4qv22fkqlzzy3js0wjf5fv"))))
+      (base32 "1284ead93b42acaec511a1649cd64d0df3da851bab2e65cf004bc90828d16b6c"))))
 
    ;; Wrap 'flatpak' so that GIO_EXTRA_MODULES is set, thereby allowing GIO to
    ;; find the TLS backend in glib-networking.
